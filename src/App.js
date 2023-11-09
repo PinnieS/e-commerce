@@ -1,11 +1,11 @@
 import React from "react";
-import Login from "./Login";
-import "bootstrap/dist/css/bootstrap.min.css";
+import HalamanLogin from "./page/login/login";
 
 function App() {
   return (
-    <Login/>
-   
+    <div>
+      <HalamanLogin />
+    </div>
   );
 }
 
