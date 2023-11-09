@@ -1,49 +1,118 @@
-/* Login.css */
+.App-header {
+  background-color: #ffb8b8;
+  background-image: url(https://images4.alphacoders.com/632/632661.jpg);
+  background-size: 1000px;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
 
-/* Latar belakang card */
-.card-body {
-  background-color: rgb(186, 177, 177);
+.login {
+  background-image: url(https://images4.alphacoders.com/632/632661.jpg);
+  background-size: 1000px;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.login-container {
+  text-align: center;
+  margin: 50px auto;
+  max-width: 300px;
   padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(245, 245, 245, 0.3);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Teks card */
-.card-title {
-  color: white;
+.login-header {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-weight: bold;
 }
 
-/* Warna tombol */
-.btn-login {
-  background-color: #007bff; 
-  border-color: #007bff;
+.form-group {
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
-.btn-login:hover {
-  background-color: #0056b3; 
-  border-color: #0056b3;
+.signup-button {
+  border-radius: 20px;
 }
 
-.btn-logout {
-  background-color: #dc3545;
-  border-color: #dc3545;
+.forgot-password-button {
+  border-radius: 20px;
 }
 
-.btn-logout:hover {
-  background-color: #c82333; 
-  border-color: #c82333;
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: midnightblue;
 }
 
-/* Warna teks input */
-.form-label {
-  color: white;
+.label {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #ffffff;
 }
 
-/* Warna teks dan latar belakang input */
-.form-control {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.8);
+.comic-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ff5252;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px #000;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
+.comic-button:hover {
+  background-color: #fff;
+  color: #ff5252;
+  border: 2px solid #ff5252;
+  box-shadow: 5px 5px 0px #ff5252;
+}
 
-body {
-  background-color: rgb(231, 214, 214);
+.comic-button:active {
+  background-color: #fcf414;
+  box-shadow: none;
+  transform: translateY(4px);
+}
+
+label {
+  font-family: "Heebo", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0.025rem;
+  font-style: normal;
+  text-transform: capitalize;
+  color: #ffffff;
+  background-color: #ef2d56;
+  border-radius: 0.15rem;
+  -webkit-border-radius: 0.15rem;
+  -moz-border-radius: 0.15rem;
+  padding: 0.3rem 0.4rem;
+  border-style: none;
+  border-width: 0rem;
+  border-color: #ef2d56;
+  -webkit-box-shadow: -0.25px 0.75px 9px -0.25px rgba(85, 85, 85, 0.36);
+  -moz-box-shadow: -0.25px 0.75px 9px -0.25px rgba(85, 85, 85, 0.36);
+  -box-shadow: -0.25px 0.75px 9px -0.25px rgba(85, 85, 85, 0.36);
 }

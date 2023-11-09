@@ -1,62 +1,50 @@
 import React, { useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 function Login() {
-  const [email, setEmail] = useState("");
+  const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [isLogin, setIsLogin] = useState(false);
-
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-  };
-
-  const handlePasswordChange = (e) => {
-    setPassword(e.target.value);
-  };
 
   const handleLogin = () => {
     if (isLogin) {
       setIsLogin(false);
     } else {
-      if (email && password) {
+      if (username && password) {
         setIsLogin(true);
       } else {
         alert("Please enter a username and password.");
       }
     }
-    console.log("Email: ", email);
-    console.log("Password: ", password);
   };
 
   return (
-    <div className="container">
-      <div className="row justify-content-center">
-        <div className="col-md-6">
-          <div className="card mt-5">
-            <div className="card-body">
-              <h3 className="card-title text-center">LOGIN</h3>
-              <form>
-                <div className="mb-3">
-                  <label htmlFor="email" className="form-label">
-                    Email
-                  </label>
-                  <input type="email" className="form-control" id="email" value={email} onChange={handleEmailChange} />
-                </div>
-                <div className="mb-3">
-                  <label htmlFor="password" className="form-label">
-                    Password
-                  </label>
-                  <input type="password" className="form-control" id="password" value={password} onChange={handlePasswordChange} />
-                </div>
-                <div style={{ textAlign: "center" }}>
-                  <button type="button" className="btn btn-dark btn-lg" onClick={handleLogin}>
-                    {isLogin ? "Logout" : "Login"}
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
+    <div className="login">
+      <div className="login-container">
+        <h1 className="login-header">{isLogin ? "WELCOME!" : "LOGIN"}</h1>
+        <div className="form-group">
+          <label className="label" htmlFor="username">
+            Username
+          </label>
+          <input type="text" id="username" value={username} onChange={(e) => setUsername(e.target.value)} />
+        </div>
+        <div className="form-group">
+          <label className="label" htmlFor="password">
+            Password
+          </label>
+          <input type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+        </div>
+        <br></br>
+        <button className="comic-button" onClick={handleLogin}>
+          {isLogin ? "LOGOUT" : "LOGIN"}
+        </button>
+        <div className="form-group">
+          <p className="ms-3">
+            Don't have an account?{" "}
+            <a href="#" className="link-info ms-3">
+              Register here
+            </a>
+          </p>
         </div>
       </div>
     </div>
