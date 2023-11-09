@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+/* Login.css */
+
+/* Latar belakang card */
+.card-body {
+  background-color: rgb(186, 177, 177);
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Teks card */
+.card-title {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Warna tombol */
+.btn-login {
+  background-color: #007bff; 
+  border-color: #007bff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-login:hover {
+  background-color: #0056b3; 
+  border-color: #0056b3;
+}
+
+.btn-logout {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-logout:hover {
+  background-color: #c82333; 
+  border-color: #c82333;
+}
+
+/* Warna teks input */
+.form-label {
+  color: white;
+}
+
+/* Warna teks dan latar belakang input */
+.form-control {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+body {
+  background-color: rgb(231, 214, 214);
 }
